@@ -20,12 +20,14 @@ h3 {
   font-size: 1.5em; }
 
 #welcomeText {
+  width: 250px;
   text-align: center;
   background-color: rgba(230, 138, 0, 0.8);
   padding: 10px 5px;
   margin: 15px 30px;
   position: relative;
-  top: -50px; }
+  top: -50px;
+  left: 20%; }
   #welcomeText h1 {
     font-size: 24px;
     padding-bottom: 10px; }
@@ -34,12 +36,10 @@ h3 {
 
 #welcomeImg {
   max-width: 75%;
-  display: block;
-  text-align: left;
-  padding-left: 10px; }
+  padding-left: 25px; }
 
 main #skills {
-  background-color: rgba(255, 102, 0, 0.7);
+  background-color: rgba(230, 138, 0, 0.8);
   margin-bottom: 30px; }
   main #skills img {
     max-width: 85%;
@@ -47,15 +47,21 @@ main #skills {
   main #skills article {
     height: 380px; }
 
-.artContent {
+#skills .artContent {
   background-color: rgba(255, 255, 255, 0.8);
   margin: 20px;
   padding: 10px;
   position: relative;
   top: -85px; }
-  .artContent img nth-of-type:even {
-    display: block;
-    text-align: right; }
+
+#projects .artContent {
+  background-color: rgba(230, 138, 0, 0.8); }
+
+#contact {
+  margin: 20px;
+  padding: 10px;
+  position: relative;
+  top: -85px; }
 
 .mainHead {
   display: flex;
