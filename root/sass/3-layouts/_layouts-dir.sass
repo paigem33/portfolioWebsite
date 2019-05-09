@@ -4,12 +4,7 @@
 body
     max-width: 960px
     margin: 0 auto
-    /*background-image: url(../images/bgImg-2.jpg)
-    /*background-image: url(../images/backgroundImg-portfolio.jpg)
     background-image: url(../images/bgImg-3.jpg)
-    /*background-image: url(../images/bgImg-4.jpg)
-    /*background-image: url(../images/bgImg-6.jpg)
-    /*background-image: url(../images/bgImg-7.jpg)
     background-repeat: no-repeat
     background-position: center
     background-size: cover
@@ -19,9 +14,9 @@ header
     display: flex
     flex-direction: column
     padding: 20px 10px
-    margin: 20px 20px
+    margin: 20px
     h1
-        font-size: 3
+        font-size: 3em
     h2
         font-family: 'Kaushan Script', cursive
         font-size: 1.75em
@@ -32,12 +27,15 @@ main
         text-align: center
         padding: 10px
         margin: 0 10px
+.hoverImg
+    display: none
 #sec1, #sec2, #sec3
     background: rgba(153, 204, 255, .9)
     margin: 20px 20px
 .threeCols, .twoCols, .oneCol
     margin: 10px
     h3
+        padding: 5px
         text-align: center
     p
         padding: 10px
@@ -49,6 +47,10 @@ footer
         font-size: 35px
         color: black
         padding: 10px
+@media screen and (min-width:500px)
+    main
+        h1
+            text-align: left
 @media screen and (min-width:700px)
     #skills
         display: flex
@@ -60,5 +62,29 @@ footer
             flex: 1
     header
         padding: 50px
-        margin: 30px
+        h1
+            font-size: 3.75em
+        h2
+            font-size: 2.5em
+@media screen and (min-width:900px)
+    header
+        h1
+            font-size: 4.5em
+        h2
+            font-size: 3em
+    #projects
+        .hoverImg
+            color: black
+            font-size: 20px
+            text-decoration: none
+            text-transform: uppercase
+            background-color: #fff
+            width: 75px
+            text-align: center
+            padding: 10px
+            border-radius: 5px
+            position: relative
+            top: -175px
+            left: 175px
+        
     

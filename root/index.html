@@ -12,6 +12,36 @@
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat" rel="stylesheet">
     <!--jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('#projects img:first').hover(
+				
+               function () {
+                  $(this).css({"opacity":".7"})
+                  $('.hoverImg:first').css({"display":"block"});
+               }, 
+				
+               function () {
+                  $(this).css({"opacity":"1"})
+                  $('.hoverImg:first').css({"display":"none"});
+               }
+            );
+            
+            $('#projects img:last').hover(
+				
+               function () {
+                  $(this).css({"opacity":".7"})
+                  $('.hoverImg:last').css({"display":"block"});
+               }, 
+				
+               function () {
+                  $(this).css({"opacity":"1"})
+                  $('.hoverImg:last').css({"display":"none"});
+               }
+            );
+        });
+            
+    </script>
 </head>
 <body>
     <header>
@@ -23,18 +53,18 @@
             <h1>Skills</h1>
             <section id="skills">
                 <article class="threeCols">
-                    <img src="images/css-html.svg" alt="">
+                    <img src="images/html5css3-111.png" alt="html css logos">
                         <h3>HTML/CSS</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, quisquam sapiente cupiditate vel dicta dolorem maxime, quod officia alias quos. Et dolore corrupti dignissimos obcaecati architecto beatae, ut culpa reiciendis.</p>
                 </article>
                 <article class="threeCols">
-                    <img src="images/js-jquery.png" alt="">
-                        <h3>JavaScript/jQuery</h3>
+                    <img src="images/sass-bootstrap-git.png" alt="sass git bootstrap logos">
+                        <h3>Bootstrap/SASS/Git</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, quisquam sapiente cupiditate vel dicta dolorem maxime, quod officia alias quos. Et dolore corrupti dignissimos obcaecati architecto beatae, ut culpa reiciendis.</p>
                 </article>
                 <article class="threeCols">
-                    <img src="https://via.placeholder.com/100x50" alt="">
-                        <h3>Bootstrap/SASS/Git</h3>
+                    <img src="images/js-jquery.png" alt="js jquery logos">
+                        <h3>JavaScript/jQuery</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, quisquam sapiente cupiditate vel dicta dolorem maxime, quod officia alias quos. Et dolore corrupti dignissimos obcaecati architecto beatae, ut culpa reiciendis.</p>
                 </article>
             </section>
@@ -44,12 +74,14 @@
             <h1>Projects</h1>
             <section id="projects">
                 <article class="twoCols">
-                    <img src="images/SBKC-picture.PNG" alt="">
+                    <a href="#"><img src="images/SBKC-picture.PNG" alt=""></a>
+                       <a href="#" class="hoverImg">Visit</a>
                         <h3>Silver Bay Kennel Club</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, quisquam sapiente cupiditate vel dicta dolorem maxime, quod officia alias quos. Et dolore corrupti dignissimos obcaecati architecto beatae, ut culpa reiciendis.</p>
                 </article>
                 <article class="twoCols">
-                    <img src="https://via.placeholder.com/100x50" alt="">
+                    <a href="#"><img src="images/earthwell-picture2.PNG" alt=""></a>
+                       <a href="#" class="hoverImg">Visit</a>
                         <h3>Earthwell</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, quisquam sapiente cupiditate vel dicta dolorem maxime, quod officia alias quos. Et dolore corrupti dignissimos obcaecati architecto beatae, ut culpa reiciendis.</p>
                 </article>
