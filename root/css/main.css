@@ -19,58 +19,79 @@ h2 {
 h3 {
   font-size: 1.5em; }
 
-#welcomeText {
-  width: 250px;
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  /*background-image: url(../images/bgImg-2.jpg) */
+  /*background-image: url(../images/backgroundImg-portfolio.jpg) */
+  background-image: url(../images/bgImg-3.jpg);
+  /*background-image: url(../images/bgImg-4.jpg) */
+  /*background-image: url(../images/bgImg-6.jpg) */
+  /*background-image: url(../images/bgImg-7.jpg) */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+header {
+  background: rgba(153, 204, 255, 0.9);
   text-align: center;
-  background-color: rgba(230, 138, 0, 0.8);
-  padding: 10px 5px;
-  margin: 15px 30px;
-  position: relative;
-  top: -50px;
-  left: 20%; }
-  #welcomeText h1 {
-    font-size: 24px;
-    padding-bottom: 10px; }
-  #welcomeText h2 {
-    font-size: 18px; }
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+  margin: 20px 20px; }
+  header h1 {
+    font-size: 3; }
+  header h2 {
+    font-family: "Kaushan Script", cursive;
+    font-size: 1.75em; }
 
-#welcomeImg {
-  max-width: 75%;
-  padding-left: 25px; }
-
-main #skills {
-  background-color: rgba(230, 138, 0, 0.8);
-  margin-bottom: 30px; }
-  main #skills img {
-    max-width: 85%;
-    padding: 10px; }
-  main #skills article {
-    height: 380px; }
-
-#skills .artContent {
-  background-color: rgba(255, 255, 255, 0.8);
-  margin: 20px;
+main h1 {
+  font-size: 1.75em;
+  border-bottom: 1px solid black;
+  text-align: center;
   padding: 10px;
-  position: relative;
-  top: -85px; }
+  margin: 0 10px; }
 
-#projects .artContent {
-  background-color: rgba(230, 138, 0, 0.8); }
+#sec1, #sec2, #sec3 {
+  background: rgba(153, 204, 255, 0.9);
+  margin: 20px 20px; }
+
+.threeCols, .twoCols, .oneCol {
+  margin: 10px; }
+  .threeCols h3, .twoCols h3, .oneCol h3 {
+    text-align: center; }
+  .threeCols p, .twoCols p, .oneCol p {
+    padding: 10px; }
 
 #contact {
-  margin: 20px;
-  padding: 10px;
-  position: relative;
-  top: -85px; }
+  text-align: center;
+  background: rgba(153, 204, 255, 0.8); }
 
-.mainHead {
-  display: flex;
-  align-items: center; }
-  .mainHead i {
-    font-size: 30px;
-    padding: 10px; }
+footer i {
+  font-size: 35px;
+  color: black;
+  padding: 10px; }
 
+@media screen and (min-width: 700px) {
+  #skills {
+    display: flex; }
+    #skills .threeCols {
+      flex: 1; }
+
+  #projects {
+    display: flex; }
+    #projects .twoCols {
+      flex: 1; }
+
+  header {
+    padding: 50px;
+    margin: 30px; } }
 footer {
-  background-color: #ff6600; }
+  text-align: center;
+  margin: 50px; }
 
 /*# sourceMappingURL=main.css.map */
