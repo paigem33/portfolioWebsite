@@ -22,6 +22,9 @@ a {
     text-decoration: underline;
     color: #0033cc; }
 
+p {
+  line-height: 150%; }
+
 * {
   padding: 0;
   margin: 0; }
@@ -32,6 +35,7 @@ body {
   background-image: url(../images/bgImg-3.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   background-size: cover; }
 
 header {
@@ -47,17 +51,24 @@ header {
     font-family: "Kaushan Script", cursive;
     font-size: 1.75em; }
 
+#about article {
+  margin: 10px; }
+  #about article p {
+    padding: 10px; }
+
+.open {
+  border-bottom: 1px solid black; }
+
 main h1 {
   font-size: 1.75em;
-  border-bottom: 1px solid black;
   text-align: center;
   padding: 10px;
   margin: 0 10px; }
 
-.hoverImg {
+.hoverImg1, .hoverImg2 {
   display: none; }
 
-#sec1, #sec2, #sec3 {
+#sec1, #sec2, #sec3, #sec4 {
   background: rgba(153, 204, 255, 0.9);
   margin: 20px 20px; }
 
@@ -73,10 +84,21 @@ main h1 {
   text-align: center;
   background: rgba(153, 204, 255, 0.8); }
 
+footer #footerFlex {
+  display: flex;
+  justify-content: center; }
 footer i {
   font-size: 35px;
   color: black;
   padding: 10px; }
+
+.fa-chevron-down {
+  font-size: 25px;
+  margin-left: 5px; }
+
+.fa-chevron-up {
+  font-size: 25px;
+  margin-left: 5px; }
 
 @media screen and (min-width: 500px) {
   main h1 {
@@ -104,7 +126,15 @@ footer i {
   header h2 {
     font-size: 3em; }
 
-  #projects .hoverImg {
+  #about article p {
+    padding: 10px 50px 20px; }
+
+  #skills img {
+    transition: all 0.2s ease-in-out; }
+    #skills img:hover {
+      transform: scale(1.1); }
+
+  #projects .hoverImg1, #projects .hoverImg2 {
     color: black;
     font-size: 20px;
     text-decoration: none;
@@ -113,10 +143,23 @@ footer i {
     width: 75px;
     text-align: center;
     padding: 10px;
-    border-radius: 5px;
-    position: relative;
-    top: -175px;
-    left: 175px; } }
+    border-radius: 5px; }
+    #projects .hoverImg1:hover, #projects .hoverImg2:hover {
+      font-weigsht: 800; }
+  #projects .hoverImg1 {
+    position: absolute;
+    top: 1345px;
+    left: 355px; }
+  #projects .hoverImg2 {
+    position: absolute;
+    top: 1345px;
+    left: 815px; }
+
+  footer i {
+    transition: all 0.1s ease-in-out; }
+    footer i:hover {
+      transform: scale(1.1);
+      color: #99ccff; } }
 footer {
   text-align: center;
   margin: 50px; }

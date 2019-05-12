@@ -3,44 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+    <title>Paige MacGregor - Web Developer</title>
     <!--personal css-->
     <link rel="stylesheet" href="css/main.css">
     <!--font awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!--google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,800" rel="stylesheet">
     <!--jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script>
         $(function(){
-            $('#projects img:first').hover(
-				
-               function () {
-                  $(this).css({"opacity":".7"})
-                  $('.hoverImg:first').css({"display":"block"});
-               }, 
-				
-               function () {
-                  $(this).css({"opacity":"1"})
-                  $('.hoverImg:first').css({"display":"none"});
-               }
-            );
             
-            $('#projects img:last').hover(
-				
-               function () {
-                  $(this).css({"opacity":".7"})
-                  $('.hoverImg:last').css({"display":"block"});
-               }, 
-				
-               function () {
-                  $(this).css({"opacity":"1"})
-                  $('.hoverImg:last').css({"display":"none"});
+            $('#projects div:first').hover(function(){
+                  $('#img1').css({"opacity":".8"});
+                  $('.hoverImg1').css({"display":"block"});
+               },function(){
+                  $('#img1').css({"opacity":"1"});
+                  $('.hoverImg1').css({"display":"none"});
                }
-            );
-        });
+            ); //end first project
             
+            $('#projects div:last').hover(function(){
+                  $('#img2').css({"opacity":".8"});
+                  $('.hoverImg2').css({"display":"block"});
+               },function(){
+                  $('#img2').css({"opacity":"1"});
+                  $('.hoverImg2').css({"display":"none"});
+               }
+            ); //end second project 
+            
+            $('#sec1 h1').click(function(){
+                $('#about').stop().slideToggle();
+                $('.about').toggleClass('fa-chevron-down fa-chevron-up');
+                $('main h1:first').toggleClass('open');
+            }) //end about tab
+            
+            $('#sec2 h1').click(function(){
+                $('#skills').stop().slideToggle();
+                $('.skills').toggleClass('fa-chevron-down fa-chevron-up');
+                $('main h1:nth-of-type(2)').toggleClass('open');
+            }) //end about tab
+            
+        }) //end doc ready
     </script>
 </head>
 <body>
@@ -50,7 +55,17 @@
     </header>
     <main>
         <div id="sec1">
-            <h1>Skills</h1>
+            <h1 class="open">About<i class="fas fa-chevron-up about"></i></h1>
+            <section id="about">
+                <article>
+                    <p>Paige MacGregor is a Front End Web Developer located in San Diego, California. She recieved training from the San Diego Continuing Education Department, where she was enrolled in a year long Front End Web Development program. There she learned about applications, technologies and principles related to web development and design such as HTML, CSS, JavaScript, website deployment, responive web design, information architecture, and user expericence. In that time, she has published two made from scratch websites, one she completed alone and one in a group. In her spare time she enjoys playing with her cat and working on fiber arts.</p>
+                </article>
+                <article class="twoCols">
+                </article>
+            </section>
+        </div>
+        <div id="sec2">
+            <h1>Skills<i class="fas fa-chevron-down skills"></i></h1>
             <section id="skills">
                 <article class="threeCols">
                     <img src="images/html5css3-111.png" alt="html css logos">
@@ -70,25 +85,29 @@
             </section>
         </div>
         
-        <div id="sec2">
-            <h1>Projects</h1>
+        <div id="sec3">
+            <h1>Projects<i class="fas fa-chevron-down"></i></h1>
             <section id="projects">
                 <article class="twoCols">
-                    <a href="#"><img src="images/SBKC-picture.PNG" alt=""></a>
-                       <a href="#" class="hoverImg">Visit</a>
+                    <div>
+                        <a href="#"><img src="images/SBKC-picture.PNG" alt="SBKC" id="img1"></a>
+                           <a href="#" class="hoverImg1">Visit</a>
+                    </div>
                         <h3>Silver Bay Kennel Club</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, quisquam sapiente cupiditate vel dicta dolorem maxime, quod officia alias quos. Et dolore corrupti dignissimos obcaecati architecto beatae, ut culpa reiciendis.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, quisquam sapiente cupiditate vel dicta dolorem maxime, quod officia alias quos. Et dolore corrupti dignissimos obcaecati architecto beatae, ut culpa reiciendis. <a href="#">Visit the site!</a></p>
                 </article>
                 <article class="twoCols">
-                    <a href="#"><img src="images/earthwell-picture2.PNG" alt=""></a>
-                       <a href="#" class="hoverImg">Visit</a>
+                    <div>
+                        <a href="#"><img src="images/earthwell-picture2.PNG" alt="earthwell" id="img2"></a>
+                           <a href="#" class="hoverImg2">Visit</a>
+                    </div>
                         <h3>Earthwell</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, quisquam sapiente cupiditate vel dicta dolorem maxime, quod officia alias quos. Et dolore corrupti dignissimos obcaecati architecto beatae, ut culpa reiciendis.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, quisquam sapiente cupiditate vel dicta dolorem maxime, quod officia alias quos. Et dolore corrupti dignissimos obcaecati architecto beatae, ut culpa reiciendis. <a href="#">Visit the site!</a></p>
                 </article>
             </section>
             </div>
-            <div id="sec3">
-            <h1>Contact</h1>
+            <div id="sec4">
+            <h1>Contact<i class="fas fa-chevron-down"></i></h1>
             <section id="contact">
                 <article class="oneCol">
                     <p>Find me on <a href="#">Github</a> or on <a href="#">Linkedin</a></p>
@@ -101,8 +120,14 @@
     </main>
     <footer>
         <p>&copy;2019 Paige MacGregor</p>
-        <a href="https://github.com/"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+        <div id="footerFlex">
+            <div>
+                <a href="https://github.com/"><i class="fab fa-github"></i></a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
