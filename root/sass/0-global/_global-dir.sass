@@ -1,4 +1,6 @@
 $mainBlue: rgb(153, 204, 255)
+$secColor: #4d4dff
+$thirdColor: #0033cc
 @mixin fontAwesome
     font-size: 25px
     margin-left: 5px
@@ -13,14 +15,14 @@ html
     font-size: 16px
 a
     text-decoration: none
-    color: #4d4dff
+    color: $secColor
     &:visited
-        color: #4d4dff
+        color: $secColor
     &:hover
         text-decoration: underline
-        color: #0033cc
+        color: $thirdColor
     &:active
         text-decoration: underline
-        color: #0033cc
+        color: $thirdColor
 p
     line-height: 150%

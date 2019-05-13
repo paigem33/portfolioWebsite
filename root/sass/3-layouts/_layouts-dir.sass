@@ -36,6 +36,7 @@ main
         text-align: center
         padding: 10px
         margin: 0 10px
+        cursor: pointer
 #sec1, #sec2, #sec3, #sec4
     background: rgba($mainBlue,.9)
     margin: 20px 20px
@@ -50,6 +51,7 @@ main
     text-align: center
     background: rgba($mainBlue,.9)
 footer
+    background-color: $mainBlue
     #footerFlex
         display: flex
         justify-content: center
@@ -58,19 +60,27 @@ footer
         color: black
         padding: 10px
     text-align: center
-    margin: 50px
+    margin: 20px
+    padding: 10px
 
 .fa-chevron-down, .fa-chevron-up
     @include fontAwesome
+.mask
+    display: none
 @media screen and (min-width:500px)
     main
         h1
             text-align: left
 @media screen and (min-width:700px)
-    #skills, #projects
+    #skills
         display: flex
         .threeCols
             flex: 1
+    #projects
+        .subSec
+            display: flex
+            .twoCols
+                flex: 1
     header
         padding: 50px
         h1
@@ -101,7 +111,6 @@ footer
             border-radius: 5px
             padding: 15px
             transition: .3
-            opacity: 0
             width: 50px
             a
                 font-size: 20px
@@ -112,20 +121,20 @@ footer
             img
                 opacity: .8
             .mask
-                opacity: 1
+                display: block
                 a
                     text-transform: uppercase
                     text-decoration: none
                     color: black
-                
-            
-                
+                    &:hover
+                        font-weight: 800
+                         
     footer
         i
             transition: all .1s ease-in-out
             &:hover
                 transform: scale(1.1)
-                color: rgb(153, 204, 255)
+                color: grey
             
         
         
