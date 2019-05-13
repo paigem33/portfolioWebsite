@@ -14,25 +14,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script>
         $(function(){
-            
-            $('#projects div:first').hover(function(){
-                  $('#img1').css({"opacity":".8"});
-                  $('.hoverImg1').css({"display":"block"});
-               },function(){
-                  $('#img1').css({"opacity":"1"});
-                  $('.hoverImg1').css({"display":"none"});
-               }
-            ); //end first project
-            
-            $('#projects div:last').hover(function(){
-                  $('#img2').css({"opacity":".8"});
-                  $('.hoverImg2').css({"display":"block"});
-               },function(){
-                  $('#img2').css({"opacity":"1"});
-                  $('.hoverImg2').css({"display":"none"});
-               }
-            ); //end second project 
-            
+             
             $('#sec1 h1').click(function(){
                 $('#about').stop().slideToggle();
                 $('.about').toggleClass('fa-chevron-down fa-chevron-up');
@@ -40,10 +22,22 @@
             }) //end about tab
             
             $('#sec2 h1').click(function(){
-                $('#skills').stop().slideToggle();
+                $('#sec2 .hidden').stop().slideToggle();
                 $('.skills').toggleClass('fa-chevron-down fa-chevron-up');
-                $('main h1:nth-of-type(2)').toggleClass('open');
-            }) //end about tab
+                $('#sec2 h1').toggleClass('open');
+            }) //end skills tab
+            
+            $('#sec3 h1').click(function(){
+                $('#sec3 .hidden').stop().slideToggle();
+                $('.projects').toggleClass('fa-chevron-down fa-chevron-up');
+                $('#sec3 h1').toggleClass('open');
+            }) //end projects tab
+            
+            $('#sec4 h1').click(function(){
+                $('#sec4 .hidden').stop().slideToggle();
+                $('.contact').toggleClass('fa-chevron-down fa-chevron-up');
+                $('#sec4 h1').toggleClass('open');
+            }) //end contact tab
             
         }) //end doc ready
     </script>
@@ -66,55 +60,63 @@
         </div>
         <div id="sec2">
             <h1>Skills<i class="fas fa-chevron-down skills"></i></h1>
-            <section id="skills">
-                <article class="threeCols">
-                    <img src="images/html5css3-111.png" alt="html css logos">
-                        <h3>HTML/CSS</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, quisquam sapiente cupiditate vel dicta dolorem maxime, quod officia alias quos. Et dolore corrupti dignissimos obcaecati architecto beatae, ut culpa reiciendis.</p>
-                </article>
-                <article class="threeCols">
-                    <img src="images/sass-bootstrap-git.png" alt="sass git bootstrap logos">
-                        <h3>Bootstrap/SASS/Git</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, quisquam sapiente cupiditate vel dicta dolorem maxime, quod officia alias quos. Et dolore corrupti dignissimos obcaecati architecto beatae, ut culpa reiciendis.</p>
-                </article>
-                <article class="threeCols">
-                    <img src="images/js-jquery.png" alt="js jquery logos">
-                        <h3>JavaScript/jQuery</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, quisquam sapiente cupiditate vel dicta dolorem maxime, quod officia alias quos. Et dolore corrupti dignissimos obcaecati architecto beatae, ut culpa reiciendis.</p>
-                </article>
-            </section>
+            <div class="hidden">
+                <section id="skills">
+                    <article class="threeCols">
+                        <img src="images/html5css3-111.png" alt="html css logos">
+                            <h3>HTML/CSS</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, quisquam sapiente cupiditate vel dicta dolorem maxime, quod officia alias quos. Et dolore corrupti dignissimos obcaecati architecto beatae, ut culpa reiciendis.</p>
+                    </article>
+                    <article class="threeCols">
+                        <img src="images/sass-bootstrap-git.png" alt="sass git bootstrap logos">
+                            <h3>Bootstrap/SASS/Git</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, quisquam sapiente cupiditate vel dicta dolorem maxime, quod officia alias quos. Et dolore corrupti dignissimos obcaecati architecto beatae, ut culpa reiciendis.</p>
+                    </article>
+                    <article class="threeCols">
+                        <img src="images/js-jquery.png" alt="js jquery logos">
+                            <h3>JavaScript/jQuery</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, quisquam sapiente cupiditate vel dicta dolorem maxime, quod officia alias quos. Et dolore corrupti dignissimos obcaecati architecto beatae, ut culpa reiciendis.</p>
+                    </article>
+                </section>
+            </div>
         </div>
         
         <div id="sec3">
-            <h1>Projects<i class="fas fa-chevron-down"></i></h1>
-            <section id="projects">
-                <article class="twoCols">
-                    <div>
-                        <a href="#"><img src="images/SBKC-picture.PNG" alt="SBKC" id="img1"></a>
-                           <a href="#" class="hoverImg1">Visit</a>
-                    </div>
-                        <h3>Silver Bay Kennel Club</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, quisquam sapiente cupiditate vel dicta dolorem maxime, quod officia alias quos. Et dolore corrupti dignissimos obcaecati architecto beatae, ut culpa reiciendis. <a href="#">Visit the site!</a></p>
-                </article>
-                <article class="twoCols">
-                    <div>
-                        <a href="#"><img src="images/earthwell-picture2.PNG" alt="earthwell" id="img2"></a>
-                           <a href="#" class="hoverImg2">Visit</a>
-                    </div>
-                        <h3>Earthwell</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, quisquam sapiente cupiditate vel dicta dolorem maxime, quod officia alias quos. Et dolore corrupti dignissimos obcaecati architecto beatae, ut culpa reiciendis. <a href="#">Visit the site!</a></p>
-                </article>
-            </section>
+            <h1>Projects<i class="fas fa-chevron-down projects"></i></h1>
+            <div class="hidden">
+                <section id="projects">
+                    <article class="twoCols">
+                        <div class="imgBtn">
+                            <a href="#"><img src="images/SBKC-picture.PNG" alt="SBKC"></a>
+                            <div class="mask">
+                                <a href="#">Visit</a>
+                            </div>
+                            </div>
+                            <h3>Silver Bay Kennel Club</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, quisquam sapiente cupiditate vel dicta dolorem maxime, quod officia alias quos. Et dolore corrupti dignissimos obcaecati architecto beatae, ut culpa reiciendis. <a href="#">Visit the site!</a></p>
+                            
+                    </article>
+                    <article class="twoCols">
+                        <div>
+                            <a href="#"><img src="images/earthwell-picture2.PNG" alt="earthwell"></a>
+                        </div>
+                            <h3>Earthwell</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, quisquam sapiente cupiditate vel dicta dolorem maxime, quod officia alias quos. Et dolore corrupti dignissimos obcaecati architecto beatae, ut culpa reiciendis. <a href="#">Visit the site!</a></p>
+                    </article>
+                </section>
+            </div>
             </div>
             <div id="sec4">
-            <h1>Contact<i class="fas fa-chevron-down"></i></h1>
-            <section id="contact">
-                <article class="oneCol">
-                    <p>Find me on <a href="#">Github</a> or on <a href="#">Linkedin</a></p>
-                    <p><a href = "mailto: paigemacgregor33@gmail.com">Send me an email</a></p>
-                    <p>See my <a href="#">other work</a></p>
-                </article>
-            </section>
+            <h1>Contact<i class="fas fa-chevron-down contact"></i></h1>
+            <div class="hidden">
+                <section id="contact">
+                    <article class="oneCol">
+                        <p>Find me on <a href="#">Github</a> or on <a href="#">Linkedin</a></p>
+                        <p><a href = "mailto: paigemacgregor33@gmail.com">Send me an email</a></p>
+                        <p>See my <a href="#">other work</a></p>
+                    </article>
+                </section>
+            </div>
             </div>
         
     </main>

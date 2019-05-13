@@ -10,7 +10,7 @@ body
     background-attachment: fixed
     background-size: cover
 header
-    background: rgba(153, 204, 255, .9)
+    background: rgba($mainBlue,.9)
     text-align: center
     display: flex
     flex-direction: column
@@ -28,16 +28,16 @@ header
             padding: 10px
 .open
     border-bottom: 1px solid black
+.hidden
+    display: none
 main
     h1
         font-size: 1.75em
         text-align: center
         padding: 10px
         margin: 0 10px
-.hoverImg1, .hoverImg2
-    display: none
 #sec1, #sec2, #sec3, #sec4
-    background: rgba(153, 204, 255, .9)
+    background: rgba($mainBlue,.9)
     margin: 20px 20px
 .threeCols, .twoCols, .oneCol
     margin: 10px
@@ -48,7 +48,7 @@ main
         padding: 10px
 #contact
     text-align: center
-    background: rgba(153, 204, 255, .8)
+    background: rgba($mainBlue,.9)
 footer
     #footerFlex
         display: flex
@@ -57,24 +57,19 @@ footer
         font-size: 35px
         color: black
         padding: 10px
-.fa-chevron-down
-    font-size: 25px
-    margin-left: 5px
-.fa-chevron-up
-    font-size: 25px
-    margin-left: 5px
+    text-align: center
+    margin: 50px
+
+.fa-chevron-down, .fa-chevron-up
+    @include fontAwesome
 @media screen and (min-width:500px)
     main
         h1
             text-align: left
 @media screen and (min-width:700px)
-    #skills
+    #skills, #projects
         display: flex
         .threeCols
-            flex: 1
-    #projects
-        display: flex
-        .twoCols
             flex: 1
     header
         padding: 50px
@@ -92,32 +87,39 @@ footer
         article
             p
                 padding: 10px 50px 20px
-    #skills
-        img
-            transition: all .2s ease-in-out
-            &:hover
-                transform: scale(1.1)
-    #projects
-        .hoverImg1, .hoverImg2
-            color: black
-            font-size: 20px
-            text-decoration: none
-            text-transform: uppercase
+    .imgBtn
+        display: block
+        overflow: hidden
+        position: relative
+        text-align: center
+        .mask
+            position: absolute
+            overflow: hidden
+            top: 125px
+            left: 185px
             background-color: #fff
-            width: 75px
-            text-align: center
-            padding: 10px
             border-radius: 5px
-            &:hover
-                font-weigsht: 800
-        .hoverImg1
-            position: absolute
-            top: 1345px
-            left: 355px
-        .hoverImg2
-            position: absolute
-            top: 1345px
-            left: 815px
+            padding: 15px
+            transition: .3
+            opacity: 0
+            width: 50px
+            a
+                font-size: 20px
+        img
+            display: block
+            position: relative
+        &:hover
+            img
+                opacity: .8
+            .mask
+                opacity: 1
+                a
+                    text-transform: uppercase
+                    text-decoration: none
+                    color: black
+                
+            
+                
     footer
         i
             transition: all .1s ease-in-out
