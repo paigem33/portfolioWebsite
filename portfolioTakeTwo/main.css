@@ -1,0 +1,88 @@
+/*
+font-family: 'Raleway', sans-serif;
+font-family: 'Barlow', sans-serif;
+*/
+* {
+    padding: 0;
+    margin: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1, h2, h3, h4 {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+p {
+    font-family: 'Raleway', sans-serif;
+}
+.about h1, h2 {
+    text-align: center;
+    font-size: 35px;
+    padding: 10px;
+}
+.p1 h1 {
+    font-size: 70px;
+    text-align: center;
+}
+.p1 h2 {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+}
+.fa-bars {
+    font-size: 40px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    filter:drop-shadow(0 0 5px rgba(255, 255, 255, .6))
+}
+.fa-arrow-circle-up {
+    font-size: 40px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    filter:drop-shadow(0 0 5px rgba(255, 255, 255, .6))
+}
+.parallax { 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+}
+.p1 {
+    height: 550px; 
+    background-image: url("images/wallPaint.jpg");
+}
+.p2 { 
+    background-image: url("images/coloredWall2.jpg");
+    height: 150px; 
+}
+.p3 {
+    height: 150px;
+    background-image: url("images/wallPaint.jpg");
+}
+.p4 {
+    height: 150px;
+    background-image: url("images/coloredWall2.jpg")
+}
+.p5 {
+    height: 150px;
+    background-image: url("images/wallPaint.jpg");
+}
+footer {
+    background-image: url("images/coloredWall2.jpg");
+    height: 150px;
+    text-align: center;
+}
+footer p {
+    font-size: 20px;
+}
+footer i {
+    font-size: 35px;
+}
