@@ -7,54 +7,105 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-    <script src="script.js" defer></script>
+    
 </head>
 <body>
-    <div class="parallax p1">
-        <h1>Paige MacGregor</h1>
-        <h2>Full Stack Web Developer</h2>
-    </div>
-    <i class="fas fa-bars"></i>
-    <i class="fas fa-arrow-circle-up"></i>
+   <header>
+        <div class="parallax p1">
+            <h1>Paige MacGregor</h1>
+            <h2>Full Stack Web Developer</h2>
+        </div>
+        <i id="menu" class="fas fa-bars" onClick="menuFunc()"></i>
+        <nav id="mainNav" class="hidden">
+            <ul>
+                <li>About</li>
+                <li>Skills</li>
+                <li>Projects</li>
+                <li>Experience</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        </header>
     <section class="about">
         <h1>Who am I</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem facilis quibusdam nemo deleniti tenetur autem impedit ut adipisci a neque nostrum nam vel sint aliquam quidem labore, iste voluptatem illum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati incidunt error, officia deleniti optio voluptates blanditiis nam, quos ut assumenda saepe, recusandae nihil cupiditate! Blanditiis optio minima, cumque culpa.</p>
+        <p>I am a developer in training at Learn Academy, a full-stack bootcamp focusing on Javascript, React, and Ruby on Rails. When I moved to San Diego, I wanted to take advantage of the tech industry here and try out development, something I had always been interested in but hadn’t had the right opportunity to pursue. My first real exposure to development was at the San Diego Community College, where I completed a front end web development program, which I thoroughly enjoyed; Learn seemed like the next logical step in my journey, and it has been fascinating adding more languages to my tool box and bringing the front end and back end together.
+        </p>
+        <a href="#"><h3>Download my resume</h3><i class="fas fa-file-download"></i></a>
     </section>
     <div class="parallax p2">
         <h1>Skill Stack</h1>
     </div>
     <section class="skills">
         <h2>Languages:</h2>
-        <img src="https://www.fillmurray.com/100/100" alt="">
-        <img src="https://www.fillmurray.com/75/100" alt="">
-        <img src="https://www.fillmurray.com/100/100" alt="">
-        <img src="https://www.fillmurray.com/200/150" alt="">
+        <div class="langPics">
+            <img src="images/HTML5.png" alt="">
+            <img src="images/HTML5-2.png" alt="">
+            <img src="images/JavaScript-logo-square.png" alt="">
+            <img src="images/ruby-logo.png" alt="">
+        </div>
         <h2>Libraries, Frameworks and Tools:</h2>
-        <img src="https://www.fillmurray.com/100/100" alt="">
-        <img src="https://www.fillmurray.com/100/100" alt="">
-        <img src="https://www.fillmurray.com/100/100" alt="">
-        <img src="https://www.fillmurray.com/200/145" alt="">
+        <div class="langPics">
+            <img src="images/git.png" alt="">
+            <img src="images/githublogo.png" alt="">
+            <img src="images/jest-logo.png" alt="">
+            <img src="images/jquery.png" alt="">
+            <img src="images/rails-logo.png" alt="">
+            <img src="images/react2.png" alt="">
+            <img src="images/sass.png" alt="">
+            <img src="images/aws-logo2.png" alt="">
+            <img src="images/bootstrap.png" alt="">
+            <img src="images/brackets.png" alt="">
+            <img src="images/atom.png" alt="">
+            <img src="images/PostgreSQL.png" alt="">
+            <img src="images/rs" alt="">
+        </div>
     </section>
     <div class="parallax p3">
         <h1>Projects</h1>
     </div>
     <section class="projects">
-        <h2>project name</h2>
-        <img src="https://www.fillmurray.com/400/400" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut aperiam delectus at nulla blanditiis neque recusandae quia voluptate voluptatem pariatur. Culpa quisquam commodi, necessitatibus aperiam mollitia, ab corporis nemo doloremque!</p>
-        <h2>project name</h2>
-        <img src="https://www.fillmurray.com/400/350" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut aperiam delectus at nulla blanditiis neque recusandae quia voluptate voluptatem pariatur. Culpa quisquam commodi, necessitatibus aperiam mollitia, ab corporis nemo doloremque!</p>
-        <h2>project name</h2>
-        <img src="https://www.fillmurray.com/400/375" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut aperiam delectus at nulla blanditiis neque recusandae quia voluptate voluptatem pariatur. Culpa quisquam commodi, necessitatibus aperiam mollitia, ab corporis nemo doloremque!</p>
-        <h2>project name</h2>
-        <img src="https://www.fillmurray.com/300/400" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut aperiam delectus at nulla blanditiis neque recusandae quia voluptate voluptatem pariatur. Culpa quisquam commodi, necessitatibus aperiam mollitia, ab corporis nemo doloremque!</p>
-        <h2>project name</h2>
-        <img src="https://www.fillmurray.com/375/400" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut aperiam delectus at nulla blanditiis neque recusandae quia voluptate voluptatem pariatur. Culpa quisquam commodi, necessitatibus aperiam mollitia, ab corporis nemo doloremque!</p>
+        <div>
+            <h2>project name</h2>
+            <img src="https://www.fillmurray.com/400/350" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut aperiam delectus at nulla blanditiis neque recusandae quia voluptate voluptatem pariatur. Culpa quisquam commodi, necessitatibus aperiam mollitia, ab corporis nemo doloremque!</p>
+            <button><a href="#">Visit</a></button>
+            <button><a href="#">Code</a></button>
+        </div>
+        <div>
+            <h2>project name</h2>
+            <img src="https://www.fillmurray.com/400/350" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut aperiam delectus at nulla blanditiis neque recusandae quia voluptate voluptatem pariatur. Culpa quisquam commodi, necessitatibus aperiam mollitia, ab corporis nemo doloremque!</p>
+            <button><a href="#">Visit</a></button>
+            <button><a href="#">Code</a></button>
+        </div>
+        <div>
+            <h2>project name</h2>
+            <img src="https://www.fillmurray.com/400/350" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut aperiam delectus at nulla blanditiis neque recusandae quia voluptate voluptatem pariatur. Culpa quisquam commodi, necessitatibus aperiam mollitia, ab corporis nemo doloremque!</p>
+           <button><a href="#">Visit</a></button>
+            <button><a href="#">Code</a></button>
+        </div>
+        <div>
+            <h2>project name</h2>
+            <img src="https://www.fillmurray.com/400/350" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut aperiam delectus at nulla blanditiis neque recusandae quia voluptate voluptatem pariatur. Culpa quisquam commodi, necessitatibus aperiam mollitia, ab corporis nemo doloremque!</p>
+            <button><a href="#">Visit</a></button>
+            <button><a href="#">Code</a></button>
+        </div>
+        <div>
+            <h2>project name</h2>
+            <img src="https://www.fillmurray.com/400/350" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut aperiam delectus at nulla blanditiis neque recusandae quia voluptate voluptatem pariatur. Culpa quisquam commodi, necessitatibus aperiam mollitia, ab corporis nemo doloremque!</p>
+            <button><a href="#">Visit</a></button>
+            <button><a href="#">Code</a></button>
+        </div>
+        <div>
+            <h2>project name</h2>
+            <img src="https://www.fillmurray.com/400/350" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut aperiam delectus at nulla blanditiis neque recusandae quia voluptate voluptatem pariatur. Culpa quisquam commodi, necessitatibus aperiam mollitia, ab corporis nemo doloremque!</p>
+            <button><a href="#">Visit</a></button>
+            <button><a href="#">Code</a></button>
+        </div>
     </section>
     <div class="parallax p4">
         <h1>Experience</h1>
@@ -74,8 +125,11 @@
         <p>Linkedin</p>
         <p>Github</p>
     </section>
+    
+    <i class="fas fa-arrow-circle-up"></i>
     <footer class="parallax">
         <p>&copy;2019 Paige MacGregor <br> Full Stack Web Developer <br> <i class="fab fa-github"></i> <i class="fab fa-linkedin"></i> </p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

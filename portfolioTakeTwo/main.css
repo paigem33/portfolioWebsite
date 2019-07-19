@@ -13,36 +13,84 @@ img {
 h1, h2, h3, h4 {
     font-family: 'Barlow Condensed', sans-serif;
 }
-p {
+p, ul, a {
     font-family: 'Raleway', sans-serif;
 }
-.about h1, h2 {
+nav {
+    position: fixed;
+    top: 54px;
+    right: 10px;
+    text-align: right;
+    font-size: 25px;
+    background-color: rgba(204, 0, 0, .9);
+    width: 200px;
+    border-radius: 5px 0 5px 5px;
+}
+.hidden {
+    display: none;
+}
+.opacity {
+    opacity: .5;
+}
+nav li {
+    padding: 7px;
+    list-style-type: none;
+    border-bottom: solid 1px black;
+    margin: 0 5px 0 20px;
+}
+nav li:last-of-type {
+    border-bottom: none;
+}
+.about h1 {
     text-align: center;
     font-size: 35px;
     padding: 10px;
+}
+.about a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    padding: 20px 0;
+}
+.about h3 {
+    font-size: 30px
+}
+.fa-file-download {
+    font-size: 40px;
+    color: black;
+    padding-left: 10px
 }
 .p1 h1 {
     font-size: 70px;
     text-align: center;
 }
-.p1 h2 {
+h2 {
     font-size: 30px;
     text-align: center;
     padding-top: 10px;
 }
-.fa-bars {
+.fa-bars, .fa-times {
     font-size: 40px;
     position: fixed;
     top: 10px;
     right: 10px;
-    filter:drop-shadow(0 0 5px rgba(255, 255, 255, .6))
+    background-color: rgba(204, 0, 0, .9);
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+.fa-times {
+    padding: 2px 9px;
+    border-radius: 5px 5px 0 0;
 }
 .fa-arrow-circle-up {
     font-size: 40px;
     position: fixed;
     bottom: 10px;
     right: 10px;
-    filter:drop-shadow(0 0 5px rgba(255, 255, 255, .6))
+    background-color: rgba(204, 0, 0, .9);
+    border-radius: 50%;
+    padding: 4px;
 }
 .parallax { 
     background-attachment: fixed;
@@ -75,6 +123,65 @@ p {
     height: 150px;
     background-image: url("images/wallPaint.jpg");
 }
+.about p {
+    line-height: 2;
+    padding: 0 7%;
+    text-align: justify;
+    font-size: 18px
+}
+.langPics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.langPics img {
+    display: block;
+    margin: 20px;
+    max-width: 30%;
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.projects div {
+    max-width: 450px;
+    margin: 10px 10px 0;
+    padding: 0 7% 15px;
+    background-color: rgba(41, 163, 163, .4);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.projects div:last-of-type {
+    margin-bottom: 10px;
+}
+.projects img {
+    display: block;
+    margin: auto;
+}
+.projects h2 {
+    padding-bottom: 10px;
+}
+.projects p {
+    padding: 10px 0;
+    text-align: justify
+}
+.projects a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+.projects button {
+    border: solid 2px black;
+    background-color: rgba(41, 163, 163, .4);
+    padding: 5px;
+    border-radius: 5px;
+    width: 75px;
+    margin: 0 5px
+}
 footer {
     background-image: url("images/coloredWall2.jpg");
     height: 150px;
@@ -85,4 +192,12 @@ footer p {
 }
 footer i {
     font-size: 35px;
+}
+@media screen and (min-width: 500px){
+    .projects div {
+        padding: 0 10px 15px;
+    }
+    .projects p {
+        padding: 10px 25px
+    }
 }
