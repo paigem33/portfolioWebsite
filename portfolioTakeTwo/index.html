@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="main.css">
     
 </head>
-<body>
+<body id="top">
    <header>
         <div class="parallax p1">
             <h1>Paige MacGregor</h1>
@@ -57,7 +57,7 @@
             <img src="images/brackets.png" alt="">
             <img src="images/atom.png" alt="">
             <img src="images/PostgreSQL.png" alt="">
-            <img src="images/rs" alt="">
+            <img src="images/rspec-logo.png" alt="">
         </div>
     </section>
     <div class="parallax p3">
@@ -66,14 +66,14 @@
     <section class="projects">
         <div>
             <h2>project name</h2>
-            <img src="https://www.fillmurray.com/400/350" alt="">
+            <img src="images/Screen%20Shot%202019-07-20%20at%208.57.33%20AM.png" alt="">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut aperiam delectus at nulla blanditiis neque recusandae quia voluptate voluptatem pariatur. Culpa quisquam commodi, necessitatibus aperiam mollitia, ab corporis nemo doloremque!</p>
             <button><a href="#">Visit</a></button>
             <button><a href="#">Code</a></button>
         </div>
         <div>
             <h2>project name</h2>
-            <img src="https://www.fillmurray.com/400/350" alt="">
+            <img src="images/Screen%20Shot%202019-07-20%20at%209.05.36%20AM.png" alt="">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut aperiam delectus at nulla blanditiis neque recusandae quia voluptate voluptatem pariatur. Culpa quisquam commodi, necessitatibus aperiam mollitia, ab corporis nemo doloremque!</p>
             <button><a href="#">Visit</a></button>
             <button><a href="#">Code</a></button>
@@ -111,24 +111,29 @@
         <h1>Experience</h1>
     </div>
     <section class="ed">
-        <h2>Learn Academy</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum consectetur sunt molestias ea assumenda neque autem soluta perferendis animi ducimus esse molestiae eligendi quaerat cumque ex temporibus officiis, voluptas illo!</p>
-        <h2>San Diego Continuing Education</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quasi ipsum, ipsam illo ut incidunt odio tempora dicta aliquam non consectetur harum optio! Aliquid voluptate repellat voluptates, atque amet et.</p>
+        <div>
+            <h2>Learn Academy</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum consectetur sunt molestias ea assumenda neque autem soluta perferendis animi ducimus esse molestiae eligendi quaerat cumque ex temporibus officiis, voluptas illo!</p>
+        </div>
+        <div>
+            <h2>San Diego Continuing Education</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quasi ipsum, ipsam illo ut incidunt odio tempora dicta aliquam non consectetur harum optio! Aliquid voluptate repellat voluptates, atque amet et.</p>
+        </div>
     </section>
     <div class="parallax p5">
         <h1>Contact</h1>
     </div>
     <section class="contact">
-        <h2>Get in touch with me through...</h2>
-        <p>Email</p>
-        <p>Linkedin</p>
-        <p>Github</p>
+        <div>
+            <button>Email</button>
+            <button>Linkedin</button>
+            <button>Github</button>
+        </div>
     </section>
     
-    <i class="fas fa-arrow-circle-up"></i>
+    <i class="fas fa-arrow-circle-up" id="scrollToTopButton" onclick="scrollToTop(300,3)"></i>
     <footer class="parallax">
-        <p>&copy;2019 Paige MacGregor <br> Full Stack Web Developer <br> <i class="fab fa-github"></i> <i class="fab fa-linkedin"></i> </p>
+        <p>&copy;2019 Paige MacGregor</p>
     </footer>
     <script src="script.js"></script>
 </body>
