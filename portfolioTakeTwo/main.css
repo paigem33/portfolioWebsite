@@ -22,6 +22,7 @@ p, ul, a {
 }
 nav {
     position: fixed;
+    z-index: 2;
     top: 53px;
     right: 10px;
     text-align: right;
@@ -123,13 +124,13 @@ a i.fa-arrow-circle-up {
 }
 .p1 {
     height: 700px; 
-    background-image: url("images/wallPaint.jpg");
+    background-image: url("images/wallPaintWeb.jpg");
     box-shadow: 
         inset 0px -11px 8px -10px black; 
     text-shadow: 0 10px 8.896px rgba(26, 26, 26, .4),0 -2px 1px rgba(26, 26, 26,.4);
 }
 .p2 { 
-    background-image: url("images/coloredWall2.jpg");
+    background-image: url("images/wallPaint.jpg");
     height: 150px; 
     box-shadow: 
         inset 0px 11px 8px -10px black,
@@ -138,7 +139,7 @@ a i.fa-arrow-circle-up {
 }
 .p3 {
     height: 150px;
-    background-image: url("images/wallPaint.jpg");
+    background-image: url("images/wallPaintWeb.jpg");
     box-shadow: 
         inset 0px 11px 8px -10px black,
         inset 0px -11px 8px -10px black; 
@@ -146,7 +147,7 @@ a i.fa-arrow-circle-up {
 }
 .p4 {
     height: 150px;
-    background-image: url("images/coloredWall2.jpg");
+    background-image: url("images/wallPaintWeb.jpg");
         box-shadow: 
         inset 0px 11px 8px -10px black,
         inset 0px -11px 8px -10px black; 
@@ -154,7 +155,7 @@ a i.fa-arrow-circle-up {
 }
 .p5 {
     height: 150px;
-    background-image: url("images/wallPaint.jpg");
+    background-image: url("images/wallPaintWeb.jpg");
     box-shadow: 
         inset 0px 11px 8px -10px black,
         inset 0px -11px 8px -10px black; 
@@ -198,15 +199,21 @@ p {
 */
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
+.projects div:first-of-type{
+    margin-top: 30px;
+}
 .projects div:last-of-type {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 .projects img {
     display: block;
     margin: auto;
 }
 .projects h2 {
-    padding-bottom: 15px;
+    padding: 15px 0;
+}
+.projects h3 {
+    font-size: 22px;
 }
 .projects p {
     padding: 10px 0;
@@ -260,6 +267,12 @@ p {
     cursor: pointer;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
 }
+
+    .contact div {
+        display: flex;
+        justify-content: space-around;
+        margin:;
+    }
 footer {
     background-color: rgba(204, 0, 0, .9);
     height: 50px;
@@ -330,6 +343,9 @@ footer i {
     .skills {
         margin: 50px;
     }
+    .skills h2 {
+        font-size: 40px
+    }
     .p1 h1, .p2 h1, .p3 h1, .p4 h1, .p5 h1 {
         font-size: 100px;
     }
@@ -345,6 +361,12 @@ footer i {
     .projects p {
         line-height: 1.5;
     }
+    .projects div:first-of-type{
+        margin-top: 10px;
+}
+    .projects div:last-of-type {
+        margin-bottom: 0;
+    }
     .ed {
         display: flex;
         justify-content: space-between;
@@ -358,11 +380,6 @@ footer i {
     }
     .contact {
         margin: 40px;
-    }
-    .contact div {
-        display: flex;
-        justify-content: space-around;
-        margin: 20px 0;
     }
     .contact a {
         padding: 5px 30%;
