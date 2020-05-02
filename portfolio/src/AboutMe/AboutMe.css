@@ -1,0 +1,24 @@
+.AboutMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.AboutMe div {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.AboutMe div:first-of-type {
+    border-right: solid 3px #333333;
+    width:50%;
+}
+.AboutMe div:last-of-type {
+    margin: 5%;
+    width:40%;
+}
+.AboutMe h3 {
+    text-transform: uppercase;
+    font-size: 28px;
+    text-align: center;
+}
