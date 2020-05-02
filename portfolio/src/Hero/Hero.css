@@ -8,8 +8,7 @@
     align-items: center;
     flex-direction: column;
     text-transform: uppercase;
-    border-bottom: 3px solid #333333;
-    box-shadow: 0 4px 7px -2px #333333;;
+    /* border-bottom: 3px solid #333333; */
 }
 .Hero h1 {
     font-size: 42px;

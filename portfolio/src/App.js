@@ -3,6 +3,7 @@ import './App.css';
 import Hero from './Hero/Hero'
 import AboutMe from './AboutMe/AboutMe';
 import ProjectCard from './ProjectCard/ProjectCard';
+import SkillSet from './SkillSet/SkillSet';
 
 class App extends Component {
   render() {
@@ -10,6 +11,7 @@ class App extends Component {
     <>
       <Hero />
       <AboutMe />
+      <SkillSet />
       <section className="Projects">
         <ProjectCard />
         <ProjectCard />
