@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+  }
 body {
     background:#f2f2f2;
     color: #333333;
@@ -26,6 +29,28 @@ body {
  
  .ProjectsTitle span { 
      background:#f2f2f2; 
+     padding:0 10px; 
+ }
+ .Experience {
+    padding: 60px 5%;
+    background-color: #f08788;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+ .ExperienceTitle {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 3px solid #f2f2f2; 
+    text-transform: uppercase;
+    line-height: 0.1em;
+    margin: 10px 0 60px; 
+    font-size: 28px;
+    color: #f2f2f2;
+ } 
+ 
+ .ExperienceTitle span { 
+     background:#f08788; 
      padding:0 10px; 
  }
 /* https://visme.co/blog/wp-content/uploads/2016/09/website39.jpg */

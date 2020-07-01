@@ -73,3 +73,12 @@
 .styles_navLinks__38tON {
     width: 60vw;
 }
+.styles_navSocial__3JBh_ li:hover {
+    background-color: transparent;
+}
+.styles_navSocial__3JBh_ {
+    margin-left: -45px;
+}
+.styles_navLinks__38tON li {
+    width:22%;
+}
